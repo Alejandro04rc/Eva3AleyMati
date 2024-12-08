@@ -38,6 +38,17 @@ class Bienvenido : AppCompatActivity() {
             insets
         }
 
+        auth = FirebaseAuth.getInstance() // Obtener instancia de FirebaseAuth
+
+        // Mostrar el mensaje de bienvenida con el correo del usuario autenticado
+        val currentUser = auth.currentUser
+        if (currentUser != null) {
+            val email = currentUser.email
+            binding.tvBienvenida.text = "Bienvenido $email"
+        } else {
+            Toast.makeText(this, "Error: No se pudo obtener el usuario", Toast.LENGTH_SHORT).show()
+        }
+
         // Botón para ir al menú
         binding.btnIrAlMenu.setOnClickListener {
             val intent = Intent(this, Menu::class.java)

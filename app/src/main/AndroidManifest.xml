@@ -16,9 +16,6 @@
             android:name=".Bienvenido"
             android:exported="false" />
         <activity
-            android:name=".Favoritos"
-            android:exported="false" />
-        <activity
             android:name=".Historial"
             android:exported="false" />
         <activity
