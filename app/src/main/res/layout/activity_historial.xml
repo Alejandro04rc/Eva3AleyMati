@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Historial"
+    android:orientation="vertical"
+    android:background="@drawable/fondo"> <!-- Fondo de pantalla -->
+
+    <!-- Botón para volver al menú principal -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnVolverMenu"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:text="Volver al Menú"
+        android:textSize="18sp"
+        android:layout_gravity="start"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Título que indica el historial de viajes -->
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Historial de viajes"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"/>
+
+    <!-- RecyclerView para mostrar la lista de viajes -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rvViajes"
+        android:layout_margin="30dp"
+        />
+
+
+</LinearLayout>
