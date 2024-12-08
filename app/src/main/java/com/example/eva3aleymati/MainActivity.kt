@@ -55,6 +55,13 @@ class MainActivity : AppCompatActivity() {
             // Si los campos son válidos, intentamos iniciar sesión.
             signIn(email, password)
         }
+
+        // Configurar el clic en el texto "¿No estás registrado? Regístrate"
+        binding.tvRegistrar.setOnClickListener {
+            // Navegar a la actividad de registro
+            val intent = Intent(this, Registrar::class.java)
+            startActivity(intent)
+        }
     }
 
     // Función para realizar el inicio de sesión con Firebase.
