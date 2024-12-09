@@ -8,8 +8,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.eva3aleymati.Vistas.ContactosFragment
-import com.example.eva3aleymati.Vistas.FavoritosFragment
 import com.example.eva3aleymati.Vistas.InicioFragment
+import com.example.eva3aleymati.Vistas.NosotrosFragment
 import com.example.eva3aleymati.databinding.ActivityBienvenidoBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.firebase.Firebase
@@ -93,7 +93,7 @@ class Bienvenido : AppCompatActivity() {
                     true
                 }
                 R.id.item_3 -> {
-                    supportFragmentManager.beginTransaction().replace(R.id.fragment_container, FavoritosFragment()).commit()
+                    supportFragmentManager.beginTransaction().replace(R.id.fragment_container, NosotrosFragment()).commit()
                     true
                 }
                 else -> false

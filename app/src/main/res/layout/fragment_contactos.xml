@@ -15,18 +15,38 @@
         android:textColor="@color/black"
         android:gravity="center"
         android:textSize="50sp"
-        android:layout_marginTop="220dp"/>
+        android:layout_marginTop="290dp"/>
 
-    <!-- Subtítulo con mensaje adicional -->
+    <!-- Subtítulos con mensaje adicional -->
     <TextView
-        android:id="@+id/tilMessage"
+        android:id="@+id/tvTelefono"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Si tienes preguntas o necesitas ayuda, ¡contactanos!"
+        android:text="Teléfono: 800 123 456"
         android:gravity="center"
         android:textSize="20sp"
         android:textColor="@android:color/black"
         android:layout_marginTop="380dp"/>
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email: contacto@transit.com"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="410dp"/>
+
+    <TextView
+        android:id="@+id/tvDireccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dirección: Calle Principal 123, Ciudad"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="440dp"/>
 
 
 </FrameLayout>
